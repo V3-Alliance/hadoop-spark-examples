@@ -12,12 +12,11 @@ import scala.util.Random
 
 import java.io.File
 
-object LinearRegression {
+object LoanProbabilityExample {
   def main(args: Array[String]) {
     Logger.getLogger("org.apache.spark").setLevel(Level.WARN)
-    Logger.getLogger("org.eclipse.jetty.server").setLevel(Level.OFF)
 
-    val sparkConf = new SparkConf().setAppName("LinearRegresion")
+    val sparkConf = new SparkConf().setAppName("LoanProbabilityExample")
     val sc = new SparkContext(sparkConf)
     val fs = FileSystem.get(sc.hadoopConfiguration)
 
